@@ -1,0 +1,172 @@
+
+/*широкие дисплеи*/
+  @media (min-width: 481px) {
+
+  /*разные фотографии, кнопки и <br>*/
+    .mobile-mode {
+      display: none; 
+    }
+  }
+  
+
+
+/*мобильные дисплеи*/
+@media (max-width: 480px) {
+  
+  /*разные фотографии, кнопки и <br>*/
+  .widescreen-mode {
+    display: none;
+  }
+
+
+  /*header*/
+  
+  .header {
+    padding-top: 65px;
+    padding-bottom: 83px;
+  }
+
+
+  .headtext {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 37px;
+  }
+
+  .lang {
+    display: none;
+  }
+
+
+  .nav{
+    display: none;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    padding: 66px 26px;
+    gap: 68px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    z-index: 1;
+    justify-content: normal;
+  }
+
+  .fullname {
+    margin-bottom: 20px;
+  }
+
+  .head-bio {
+    margin-bottom: 37px;
+  }
+
+  .nav-link {
+    font-weight: normal;
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+
+/******* hamburger-menu ************/
+  [for=nav-button]{
+    display: block;
+    position: fixed;
+    top: 68px;
+    right: 30px;
+    width: 30px;
+    text-align: center;
+    z-index: 10;
+  }
+
+  #nav-button:checked + label + nav {
+    display: block;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 68px;
+    right: 30px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+  }
+  
+  .hamburger div {
+    position: relative;
+    width: 33px;
+    height: 4px;
+    background-color: #070707;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+/**
+Animations
+**/
+#nav-button:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 15px;
+}
+#nav-button:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#nav-button:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -4px;
+}
+
+/******************************************/
+
+
+  /* About me */
+
+  .about-me {
+    padding-top: 81px;
+    padding-bottom: 76px;
+  }
+
+  .about-title {
+    margin-bottom: 30px;
+  }
+
+  /* Skills */
+
+  .skills {
+    padding-top: 83px;
+    padding-bottom: 98px;
+  }
+
+  .skills-title {
+    margin-bottom: 50px;
+  }
+
+  .skills-article {
+    margin-bottom: 71px;
+  }
+  
+  /* Portfolio */
+
+  .portfolio {
+    padding-top: 81px;
+    padding-bottom: 81px;
+  }
+
+  .portfolio-title {
+    margin-bottom: 65px;
+  }
+
+
+
+  .socials {
+    gap: 50px;
+  }
+  
+  
+}
